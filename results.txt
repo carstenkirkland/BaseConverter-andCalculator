@@ -1,0 +1,9 @@
+CALCULATION: 001110 + 1 in base binary = 1111
+CONVERSION: 14 (decimal) -> 1110 (binary)
+CONVERSION: 255 (decimal) -> FF (hexadecimal)
+CONVERSION: 14 (decimal) -> 1110 (binary)
+CALCULATION: 10 + 5 in base decimal = 15
+CONVERSION: AF3 (hexadecimal) -> 2803 (decimal)
+CONVERSION: 67 (decimal) -> 43 (hexadecimal)
+CALCULATION: FF + 1 in base hexadecimal = 100
+CONVERSION: 5 (decimal) -> 5 (octal)
