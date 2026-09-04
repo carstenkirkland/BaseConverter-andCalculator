@@ -128,6 +128,25 @@ to exit the program.
 
 <br />
 
+<h2>Reflection</h2>
+
+This project was a cumulation of what I have learned in Python and was the first time I had the resources + creative freedom to make what ever I wanted. As this project happen freshman year I still did not have electrical engineering experience, but I knew that
+binary and hexadecimal number systems would be an important aspect appearing in my future career. So I turned this project into another learning experience on top of coding as I became familiar with the binary and hexadecimal system. 
+
+
+In terms of how the actual project went I was able to use code to turn my initial idea into a working program by breaking
+the problem into smaller pieces. Once I separated each task into its own function, the project became much more manageable, and I could build each
+part step-by-step. Throughout the process I ran into several errors, especially with incorrect inputs,
+number mismatches between bases, and the program not giving prompts. I fixed these by adding clear input
+validation, error messages, and testing each part individually until everything worked together. I also learned
+more as I did some research for this project. As an example fill allows me to add zeros to the front of my
+binary numbers so that they are correct.
+
+
+
+
+My Python skills grew exponentially in one year. And while the actual coding I did not find that exciting, applying it to a subject I am passionate for, electrical engineering, made it fun. 
+
 
 <h2>Tools & Technologies</h2>
 
