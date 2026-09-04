@@ -129,6 +129,14 @@ to exit the program.
 
 - <b>Python</b> 
 - <b>Visual Studio Code</b>
-- <b>File I/O</b>
-- <b>Data Visualization</b>
+- <b>Matplotlib</b>
+
+<br />
+
+<h2>Key Concepts</h2>
+
+- <b>File I/O for saving results</b> 
+- <b>Data visualization with Matplotlib</b>
+- <b>Modular function-based program structure</b>
+- <b>Input validation and error handling</b>
 </p>
