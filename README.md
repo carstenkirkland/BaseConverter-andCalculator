@@ -1,165 +1,141 @@
-<h1> Decimal, Binary, Octal & Hexadecimal Convert + Calculator</h1>
+# Decimal, Binary, Octal & Hexadecimal Converter + Calculator
 
-[Code File](https://github.com/carstenkirkland/BaseConverter-andCalculator/blob/main/code.py)
- <br />
+[Code File](https://github.com/carstenkirkland/BaseConverter-andCalculator/blob/main/code.py)  
+[Example Result File](https://github.com/carstenkirkland/BaseConverter-andCalculator/blob/main/results.txt)
 
-[Example of Result File](https://github.com/carstenkirkland/BaseConverter-andCalculator/blob/main/results.txt)
+## Description
 
-<h2>Description</h2>
-USER INPUT INSTRUCTIONS
+This Python program allows users to convert numbers between binary, octal, decimal, and hexadecimal or perform arithmetic calculations in a selected number system.
 
+I developed this project during my freshman year as a way to apply what I was learning in Python while also becoming more familiar with binary and hexadecimal number systems used in electrical and computer engineering.
 
-This program allows you to either convert numbers
-between bases or perform calculations in a chosen base.
+The program includes number-base conversion, arithmetic operations, input validation, error handling, file-based result storage, and data visualization using Matplotlib.
 
+---
 
-When the program starts, type one of the following:
+## How to Use the Program
 
+When the program starts, select one of the following options:
 
-    1  → Convert a number between bases
-    2  → Perform a calculation in a chosen base
-    3  → Quit the program
+1. Convert a number between bases
+2. Perform a calculation in a chosen base
+3. Quit the program
 
+### Option 1: Number Conversion
 
-     
+If you choose **1**, enter:
 
- <br />
-
-
-OPTION 1: NUMBER CONVERSION
-
-
-If you choose 1, you will enter THREE inputs:
-
-
-1. Starting base  (type exactly one)
-       binary
-       octal
-       decimal
-       hexadecimal
-
-
+1. Starting base:
+   - Binary
+   - Octal
+   - Decimal
+   - Hexadecimal
 2. The number in that base
-   Example valid inputs:
-       decimal     → 255,
-       binary      → 101101,
-       octal       → 127,
-       hexadecimal → AF3
+3. The base you want to convert to
 
+Example input:
 
-4. The base you want to convert to
-   (same four options as above)
+- Option: 1
+- Starting base: Decimal
+- Number: 255
+- Output base: Hexadecimal
 
+Expected output:
 
-Example Input Sequence:
-    1,
-    decimal,
-    255,
-    hexadecimal.
+**Converted Value: FF**
 
+The program also generates a bar graph comparing the length of the number in binary, octal, decimal, and hexadecimal.
 
+The conversion is saved to a results file containing previous program outputs.
 
+Example:
 
-After this, a bar graph will appear showing how long the number is in
-binary, octal, decimal, and hex.
+**CONVERSION: 255 (decimal) -> FF (hexadecimal)**
 
+---
 
-Expected Output:
-    Converted Value: FF
-Will save result in a file which stores all previous tasks
-    Ex: CONVERSION: 255 (decimal) -> FF (hexadecimal)
+### Option 2: Perform Calculation
 
+If you choose **2**, enter:
 
-<br />
+1. Base of the calculation:
+   - Binary
+   - Octal
+   - Decimal
+   - Hexadecimal
+2. First number
+3. Operation:
+   - `+`
+   - `-`
+   - `*`
+   - `/`
+4. Second number
 
+Example input:
 
+- Option: 2
+- Base: Hexadecimal
+- First number: A
+- Operation: +
+- Second number: 5
 
-OPTION 2: PERFORM CALCULATION
+Expected output:
 
+**Result: F**
 
-If you choose 2, you will enter FOUR inputs:
+The calculation is also saved to the results file.
 
+Example:
 
-1. Base of the calculation (choose one)
-       binary
-       octal
-       decimal
-       hexadecimal
+**CALCULATION: A + 5 in base hexadecimal = F**
 
+> **Note:** The graph is only generated for number conversions, not calculations.
 
-2. First number (must match the base)
+---
 
+### Option 3: Quit
 
-3. Operation (choose one)
-       +
-       -
-       *
-       /
+Enter **3** to exit the program.
 
+---
 
-4. Second number (same base as the first)
+## Program Features
 
+- Converts between binary, octal, decimal, and hexadecimal
+- Performs arithmetic operations in multiple number systems
+- Saves previous conversions and calculations to a file
+- Generates a bar graph using Matplotlib
+- Checks for invalid base inputs
+- Prevents division by zero
+- Uses separate functions to organize program logic
 
-Example Input Sequence:
-    2,
-    hexadecimal,
-    A,
-    +,
-    5.
+---
 
+## Reflection
 
-*Note there is no graph for this one
+This project was the culmination of what I learned in my introductory Python course and was one of my first opportunities to independently design a program around a topic that interested me.
 
+At the time, I had not yet started my core electrical engineering coursework, but I knew that binary and hexadecimal number systems would become important later in my degree. I used the project as an opportunity to develop both my programming skills and my familiarity with these number systems.
 
-Expected Output:
-    Result: F
-Will save result in a file which stores all previous tasks
-    Ex: CALCULATION: A + 5 in base hexadecimal = F
+One of the most valuable parts of the project was learning how to break a larger problem into smaller functions for conversion, calculation, visualization, and file handling. Separating each task made the program easier to build, test, and debug.
 
+During development, I encountered several issues involving incorrect inputs, numbers that did not match the selected base, missing prompts, and division by zero. I addressed these problems by adding input validation, error messages, and additional testing.
 
-<br />
+This project also strengthened my understanding of Python functions, loops, file I/O, data visualization, input validation, and debugging. I especially enjoyed the troubleshooting process of identifying why the program was producing an error or unexpected result and determining how to correct it.
 
-OPTION 3: QUIT PROGRAM
+---
 
+## Tools & Technologies
 
-Type:
-    3
-to exit the program.
+- **Python**
+- **Visual Studio Code**
+- **Matplotlib**
 
-<br />
+## Key Concepts
 
-<h2>Reflection</h2>
-
-This project was a cumulation of what I have learned in Python and was the first time I had the resources + creative freedom to make what ever I wanted. As this project happen freshman year I still did not have electrical engineering experience, but I knew that
-binary and hexadecimal number systems would be an important aspect appearing in my future career. So I turned this project into another learning experience on top of coding as I became familiar with the binary and hexadecimal system. 
-
-
-In terms of how the actual project went I was able to use code to turn my initial idea into a working program by breaking
-the problem into smaller pieces. Once I separated each task into its own function, the project became much more manageable, and I could build each
-part step-by-step. Throughout the process I ran into several errors, especially with incorrect inputs,
-number mismatches between bases, and the program not giving prompts. I fixed these by adding clear input
-validation, error messages, and testing each part individually until everything worked together. I also learned
-more as I did some research for this project. As an example fill allows me to add zeros to the front of my
-binary numbers so that they are correct.
-
-
-
-
-My Python skills grew exponentially in one year. And while the actual coding I did not find that exciting, applying it to a subject I am passionate for, electrical engineering, made it fun. 
-
-
-<h2>Tools & Technologies</h2>
-
-- <b>Python</b> 
-- <b>Visual Studio Code</b>
-- <b>Matplotlib</b>
-
-<br />
-
-<h2>Key Concepts</h2>
-
-- <b>File I/O for saving results</b> 
-- <b>Data visualization with Matplotlib</b>
-- <b>Modular function-based program structure</b>
-- <b>Input validation and error handling</b>
-</p>
+- **Number-base conversion**
+- **File I/O for saving results**
+- **Data visualization with Matplotlib**
+- **Modular function-based program structure**
+- **Input validation and error handling**
+- **Testing and debugging**
